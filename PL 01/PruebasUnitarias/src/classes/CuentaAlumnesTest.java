@@ -36,14 +36,14 @@ class CuentaAlumnesTest {
 	void testIngresar() {
 		CuentaAlumnes cuenta = new CuentaAlumnes();
 		
-		// Ingreso valida
+		// Ingreso valido
 		float balance = cuenta.getBalance();
 		
 		float ingreso = 10;
 		cuenta.Ingresar(ingreso);
 		assertEquals(balance + ingreso, cuenta.getBalance());
 		
-		// Ingreso invalido
+		// Ingreso no valido
 		balance = cuenta.getBalance();
 		
 		ingreso = 3001;
